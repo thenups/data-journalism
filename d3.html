@@ -4,11 +4,58 @@
 	<meta charset="UTF-8">
 	<title>D3 Project</title>
 	<link rel="stylesheet" href="assets/css/d3Style.css">
+
+	<!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 	<!-- Add your js assets here (except your app.js file, which should be at the bottom of the body). -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
 </head>
 <body>
 
 	<!-- Append your graphic here. -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="chartContainer">
+					<div class="graphHeaders lessThan50kHead">Less than $50K Household Income</div>
+					<div class="subHead">
+						<div class="graphSubHeaders lessThan50kSubHead">Normal BMI</div>
+						<div id="svgC1" class="svgContainer"><div id="svg1" class="addBorder50"></div></div>
+					</div>
+					<div class="subHead">
+						<div class="graphSubHeaders lessThan50kSubHead">Obese BMI</div>
+						<div id="svgC2" class="svgContainer"><div id="svg2" class="addBorder50"></div></div>
+					</div>
+				</div>
 
+				<div class="chartContainer">
+					<div class="graphHeaders moreThan150kHead">More than $150K Household Income</div>
+					<div class="subHead">
+						<div class="graphSubHeaders moreThan150kSubHead">Normal BMI</div>
+						<div id="svgC3" class="svgContainer"><div id="svg3" class="svgBox addBorder150"></div></div>
+					</div>
+					<div class="subHead">
+						<div class="graphSubHeaders moreThan150kSubHead">Obese BMI</div>
+						<div id="svgC4" class="svgContainer"><div id="svg4" class="svgBox addBorder150"></div></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="assets/js/app.js"></script>
 </body>
 </html>

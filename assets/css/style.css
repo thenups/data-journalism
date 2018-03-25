@@ -3,6 +3,18 @@
   border: 1px solid #e3e3e3;
 }
 
+/* .iframeContainer iframe {
+    position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+} */
+
+.article {
+    position: relative;
+}
+
 /* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
 html {
   position: relative;
@@ -12,6 +24,34 @@ html {
 body {
   /* Padding bottom by footer height */
   padding-bottom: 80px;
+  width: 100%;
+}
+
+.centeredTable {
+    margin: auto;
+    width: 50%
+}
+
+table {
+    border-spacing: 5px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.emptyCell {
+    border: 0px;
+}
+
+.colorRed {
+    background-color: #FFC7CE;
+}
+
+.colorGreen {
+    background-color: #99CC00;
 }
 
 #footer {
