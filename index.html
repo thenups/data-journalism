@@ -4,21 +4,11 @@
     <meta charset="UTF-8">
 	<title>D3Times</title>
 	<link rel="stylesheet" href="assets/css/style.css">
-
-    <script>
-        function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-        }
-
-        var iframeWin = document.getElementById('displayframe').contentWindow;
-        $(iframeWin).on('resize', resizeIframe(iframeWin));
-
-    </script>
 </head>
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-12 col-md-offset-0">
+			<div class="col-xs-12 col-md-12 col-md-offset-0 d3header">
 				<h1>D3Times</h1>
 			</div>
 		</div>
@@ -26,7 +16,7 @@
 			<div class="col-md-12 col-md-9 col-md-offset-0">
 				<div class="embed-responsive-item iframeContainer">
 					<!-- Students: Add a responsive iframe here that includes the d3.html file -->
-                    <iframe src="d3.html" width="100%" frameborder="0" scrolling="no" onload="resizeIframe(this)" />
+                    <iframe src="d3.html" frameborder="0" width="100%" scrolling="auto" onload='this.height=this.contentWindow.document.body.scrollHeight;'></iframe>
 				</div>
 			</div>
 		</div>
@@ -55,6 +45,13 @@
                         </table>
                     </div>
                     <p>For housholds that make less than $50K, we found there to bee a <b>negative</b> correlation to normal body weight, and a <b>positive</b> correlation to being obese.  However, we found the <b>exact opposite</b> with households that make more than $150K a year. So, the graphs above show converse trends. This means that there is a relatively high likelyhood that household income (if an individual is on the low or high end) is a key factor in determining weather someone has a normal or an obese BMI.</p>
+                    <p></p>
+                    <p><b>Resources:</b>
+                        <ul>
+                            <li> <a href="http://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml">http://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml</a></li>
+                            <li><a href="https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq">https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq</a></li>
+                        </ul>
+                    </p>
 				</div>
 			</div>
 		</div>
@@ -63,7 +60,7 @@
 
 		<!-- Footer-->
 	<div id="footer">
-		<p><!-- Insert your Copyright Info here --></p>
+		<p>&copy; Nupur Mathur</p>
 	</div>
 
 </body>

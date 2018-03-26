@@ -103,3 +103,8 @@
   top: 100%;
   left: 0;
 }
+
+body {
+    height: auto;
+    overflow: auto
+}
